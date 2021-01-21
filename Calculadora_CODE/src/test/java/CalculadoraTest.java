@@ -2,6 +2,7 @@
 import com.cifpcarballeira.dam127.calculadora_code.Calculadora;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeAll;
 
 public class CalculadoraTest {
 
@@ -36,8 +37,8 @@ public class CalculadoraTest {
         assertEquals(2, Calculadora.resto(a, b));
     }
     
-    @BeforeClass
-    public static void setUpClass() {
+    @BeforeAll
+    public static void setUp() {
         a = 2;
         b = 3;
     }
