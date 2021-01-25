@@ -16,7 +16,7 @@ public class recorridoSubMatriz {
             System.out.println("");
         }
 
-        /* Dando un punto central y un arco.
+/* Dando un punto central y un arco.
         
         int fc, cc;
 
@@ -54,7 +54,7 @@ public class recorridoSubMatriz {
         }
         
         //------------------------------------------------------------------*/
- /* De arriba a abajo recorrer cada columna.
+/* De arriba a abajo recorrer cada columna.
         
         System.out.println("");
         for (int i = 0; i < matriz[0].length; i++) {
@@ -71,7 +71,7 @@ public class recorridoSubMatriz {
         }
         
         //------------------------------------------------------------------*/
- /* Recorrido por filas de derecha a izquierda empezando por el final.
+/* Recorrido por filas de derecha a izquierda empezando por el final.
         System.out.println("");
         
         for (int i = matriz.length-1; i >= 0; i--) {
@@ -83,7 +83,7 @@ public class recorridoSubMatriz {
         
         //------------------------------------------------------------------*/
  
-        /*Recorrer las casillas adyacentes a un punto (usando solo if)(otra opción: usar el método de arco sin mostrar el punto central).
+/*Recorrer las casillas adyacentes a un punto (usando solo if)(otra opción: usar el método de arco sin mostrar el punto central).
         int fc, cc;
 
         do {
