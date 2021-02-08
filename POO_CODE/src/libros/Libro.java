@@ -1,4 +1,4 @@
-package poo;
+package libros;
 
 public class Libro {
 
