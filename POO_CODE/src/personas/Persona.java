@@ -11,9 +11,13 @@ public class Persona {
     }
 
     public Persona(String nombre, int edad, String dni) {
+        if (DNI.esValido(dni)) {
+            this.dni = dni;
+        } else {
+            throw new IllegalArgumentException("El dni no es válido");
+        }
         this.nombre = nombre;
         this.edad = edad;
-        this.dni = dni;
     }
 
     public String getNombre() {
@@ -37,7 +41,11 @@ public class Persona {
     }
 
     public void setDNI(String dni) {
-        this.dni = dni;
+        if (DNI.esValido(dni)) {
+            this.dni = dni;
+        } else {
+            throw new IllegalArgumentException("El dni no es válido");
+        }
     }
 
     public String mostrar() {

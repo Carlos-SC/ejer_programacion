@@ -1,4 +1,5 @@
 package personas;
+import cuentas.*;
 
 import java.util.Scanner;
 
@@ -22,5 +23,11 @@ public class ProgramaPersonas {
         } else {
             System.out.println(alguien.getNombre()+" no es mayor de edad");
         }
+        
+        Cuenta cuenta1 = new CuentaJoven(alguien, 100,(byte)1);
+    
+        cuenta1.retirar(50);
+        System.out.println("DATOS DE LA CUENTA: ");
+        System.out.println(cuenta1.mostrar());
     }
 }

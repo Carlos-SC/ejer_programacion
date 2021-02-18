@@ -1,23 +1,24 @@
 package cuentas;
+import personas.Persona;
 
 public class Cuenta {
-    private String titular;
+    private Persona titular;
     private double cantidad;
     
-    public Cuenta(String titular) {
+    public Cuenta(Persona titular) {
         this.titular = titular;
     }
     
-    public Cuenta(String titular, double cantidad) {
+    public Cuenta(Persona titular, double cantidad) {
         this.titular = titular;
         this.cantidad = cantidad;
     }
     
-    public String getTitular() {
+    public Persona getTitular() {
         return titular;
     }
     
-    public void setTitular(String titular) {
+    public void setTitular(Persona titular) {
         this.titular = titular;
     }
     
@@ -26,8 +27,8 @@ public class Cuenta {
     }
     
     public String mostrar() {
-        String info = "Titular: "+this.titular+
-                "\nCantidad: "+this.cantidad;
+        String info = "==========Titular============ \n"+this.titular.mostrar()+
+                "\n==========Cantidad===========\n"+this.cantidad;
         
         return info;
     }
@@ -45,6 +46,4 @@ public class Cuenta {
             this.cantidad -= cantidad;
         }
     }
-    
-    
 }
