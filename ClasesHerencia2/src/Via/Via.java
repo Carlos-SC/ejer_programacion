@@ -3,7 +3,7 @@ package Via;
 import java.time.LocalDate;
 import static java.time.temporal.ChronoUnit.YEARS;
 
-public abstract class Via {
+public abstract class Via implements Comparable<Via> {
 
     protected String codigo;
     protected String titular;
@@ -146,5 +146,16 @@ public abstract class Via {
         long anios = YEARS.between(this.fechaInauguracion, actual);
 
         return anios;
+    }
+    
+    @Override
+    public int compareTo(Via o) {
+        if (this.fechaInauguracion.isAfter(o.fechaInauguracion)) {
+            return 1;
+        } else if (this.fechaInauguracion.isBefore(o.fechaInauguracion)) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 }

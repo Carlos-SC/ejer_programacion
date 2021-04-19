@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Prueba {
+public class ClasePrincipal {
 
     static Scanner s = new Scanner(System.in);
     static ArrayList<Via> vias = new ArrayList<Via>();
